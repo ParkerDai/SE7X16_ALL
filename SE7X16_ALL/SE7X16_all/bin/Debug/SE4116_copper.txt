@@ -1,0 +1,4 @@
+se4116 100.100.100.17 oracle ns2000
+Stop when fail
+Console-DUT show
+Buzzer

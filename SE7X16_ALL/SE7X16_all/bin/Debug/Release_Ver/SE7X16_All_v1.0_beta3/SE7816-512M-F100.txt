@@ -1,0 +1,29 @@
+se7816-512M-F100 100.100.100.17 oracle ns2000
+Stop when fail
+Console-DUT show
+Telnet
+Console-EUT
+//sleep 30 s
+LoadTools
+//COM 8 rs232
+COMtoCOM 1-8 100.100.100.19 rs485 115200 5 s
+//COMtoCOM 1-8 100.100.100.19 rs422 115200 5 s
+//COMtoCOM 1-8 100.100.100.19 rs232 115200 10 s
+//CANtoCAN 2 100.100.100.19 125 3 s
+GPS
+SD
+USB
+SATA
+dotodi 1
+dotodi 3-4
+//Lan
+//lcm
+//Keypad
+Buzzer
+Restore
+Delete
+RTC
+//Restart login 60
+getrtc 45
+eepromIC 1
+FactoryFiles

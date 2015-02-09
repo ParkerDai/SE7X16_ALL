@@ -1,0 +1,12 @@
+se7816-512M 100.100.100.17 oracle ns2000
+//SE7416 192.168.0.1 atop 2261
+//Stop when fail
+Console-DUT show
+//Telnet
+Console-EUT
+LoadTools
+COMtoCOM 1-8 rs485 5 s
+COMtoCOM 1-8 rs422 5 s
+COMtoCOM 1-8 rs232 10 s
+CANtoCAN 2 5 s
+Delete

@@ -1,0 +1,31 @@
+SE7816 192.168.0.1 atop 2261
+Stop when fail
+Console-DUT show
+Delete
+Restart login 60
+//Telnet
+Console-DUT show
+Console-EUT
+//sleep 30 s
+LoadTools
+//COM 8 rs232
+COMtoCOM 1-8 rs485 5 s
+COMtoCOM 1-8 rs422 5 s
+COMtoCOM 1-8 rs232 10 s
+GPS
+SD
+USB
+SATA
+dotodi 1
+dotodi 3-4
+//Lan
+//lcm
+//Keypad
+Buzzer
+Restore
+Delete
+RTC
+//Restart login 60
+getrtc 57
+eepromIC 1
+FactoryFiles

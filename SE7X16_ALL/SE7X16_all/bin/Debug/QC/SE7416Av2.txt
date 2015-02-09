@@ -1,0 +1,24 @@
+SE7416 192.168.0.1 atop 2261
+Stop when fail
+Console-DUT show
+Delete
+Restart none 25
+Console-EUT
+LoadTools
+Console-DUT show
+Testd 192.168.0.2
+Buzzer
+//sleep 30 s
+//COM 8 rs232
+COMtoCOM 1-8 rs485 5 s
+COMtoCOM 1-8 rs422 5 s
+COMtoCOM 1-8 rs232 10 s
+GPS
+dotodi 1-2
+dotodi 3-4
+Restore
+Delete
+RTC
+//Restart none 25
+getrtc 24
+FactoryFiles

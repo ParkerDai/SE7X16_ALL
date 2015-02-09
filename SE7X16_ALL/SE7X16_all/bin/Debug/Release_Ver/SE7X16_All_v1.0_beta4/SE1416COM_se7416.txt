@@ -1,0 +1,10 @@
+SE7416 192.168.0.1 atop 2261
+Stop when fail
+Console-DUT show
+//Telnet
+Console-EUT
+LoadTools
+COMtoCOM 1-8 rs485 10 s
+COMtoCOM 1-8 rs422 10 s
+COMtoCOM 1-8 rs232 10 s
+Delete

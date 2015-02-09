@@ -1,0 +1,8 @@
+se7816-512M 100.100.100.17 oracle ns2000
+Stop when fail
+Console-DUT show
+//Telnet
+Console-EUT
+COMtoCOM 1-8 rs485 10 s
+//COMtoCOM 1-8 rs422 10 s
+COMtoCOM 1-8 rs232 10 s

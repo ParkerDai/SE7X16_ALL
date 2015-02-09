@@ -1,0 +1,14 @@
+se7116 100.100.100.17 oracle ns2000
+Console-DUT show
+Console-EUT
+Telnet
+LoadTools
+COMtoCOM 1-8 rs485 5 s
+COMtoCOM 1-8 rs422 5 s
+COMtoCOM 1-8 rs232 10 s
+CANtoCAN 2 5 s
+SD
+USB
+RTC
+//Buzzer
+//Restart login 60
